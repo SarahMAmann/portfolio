@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   padding: 4rem 0;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 960px) {
     flex-direction: column;
@@ -12,7 +12,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Details = styled.div`
-  flex: 1;
+  /* flex: 1; */
+  width: 70%;
   padding-right: 2rem;
 
   @media (max-width: 960px) {

@@ -7,10 +7,7 @@ import Fork from 'components/common/Icons/Fork';
 import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
 
 export const Projects = () => {
-  return (
-    <div>some projects</div>
-  )
-  // const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   // const {
   //   github: {
   //     viewer: {
@@ -46,45 +43,34 @@ export const Projects = () => {
   //       }
   //     }
   //   `
-  // );
-  // return (
-  //   <Wrapper as={Container} id="projects">
-  //     <h2>Projects</h2>
-  //     <Grid>
-  //       {edges.map(({ node }) => (
-  //         <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
-  //           <Card theme={theme}>
-  //             <Content>
-  //               <h4>{node.name}</h4>
-  //               <p>{node.description}</p>
-  //             </Content>
-  //             <TitleWrap>
-  //               <Stats theme={theme}>
-  //                 <div>
-  //                   <Star color={theme === "light" ? "#000" : "#fff"} />
-  //                   <span>{node.stargazers.totalCount}</span>
-  //                 </div>
-  //                 <div>
-  //                   <Fork color={theme === "light" ? "#000" : "#fff"} />
-  //                   <span>{node.forkCount}</span>
-  //                 </div>
-  //               </Stats>
-  //               <Stats theme={theme}>
-  //                 <Languages>
-  //                   {
-  //                     node.languages.nodes.map(({ id, name }) => (
-  //                       <span key={id}>
-  //                         {name}
-  //                       </span>
-  //                     ))
-  //                   }
-  //                 </Languages>
-  //               </Stats>
-  //             </TitleWrap>
-  //           </Card>
-  //         </Item>
-  //       ))}
-  //     </Grid>
-  //   </Wrapper>
-  // );
+  return (
+    <Wrapper as={Container} id="projects">
+      <h2>Project Highlights</h2>
+      <Grid>
+        <Item key={1} as="a" href={''} target="_blank" rel="noopener noreferrer" theme={theme}>
+          <Card theme={theme}>
+            <Content>
+              <h4>test</h4>
+              <p>description</p>
+            </Content>
+            <TitleWrap>
+              <Stats theme={theme}>
+                <div>
+                  <Star color={theme === "light" ? "#000" : "#fff"}/>
+                  <span>5</span>
+                </div>
+                <div>
+                  <Fork color={theme === "light" ? "#000" : "#fff"}/>
+                  <span>1</span>
+                </div>
+              </Stats>
+              <Languages>
+                {<span key={1}>name</span>}
+              </Languages>
+            </TitleWrap>
+          </Card>
+        </Item>
+      </Grid>
+    </Wrapper>
+  );
 };

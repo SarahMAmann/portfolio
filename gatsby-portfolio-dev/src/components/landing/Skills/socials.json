@@ -1,0 +1,39 @@
+[
+    {
+      "id": 0,
+      "name": "YouTube",
+      "link": "https://youtube.com/channel/UCoftN-pj8_ixoDZ6r767RTQ",
+      "icon": "/icons/telegram.svg"
+    },
+    {
+      "id": 1,
+      "name": "Instagram",
+      "link": "https://github.com/smakosh",
+      "icon": "/icons/telegram.svg"
+    },
+    {
+      "id": 2,
+      "name": "Twitter",
+      "link": "https://twitter.com/itssarahamann",
+      "icon": "/icons/twitter.svg"
+    },
+    {
+      "id": 3,
+      "name": "Github",
+      "link": "https://github.com/SarahMAmann",
+      "icon": "/icons/github.svg"
+    },
+    {
+        "id": 4,
+        "name": "LinkedIn",
+        "link": "https://linkedin.com/in/sarah-marie-amann/",
+        "icon": "/icons/telegram.svg"
+    },
+    {
+        "id": 4,
+        "name": "Medium",
+        "link": "https://peachhouse.medium.com/",
+        "icon": "/icons/telegram.svg"
+    }
+  ]
+  

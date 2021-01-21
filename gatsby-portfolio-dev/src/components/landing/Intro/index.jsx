@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
-import dev from 'assets/illustrations/dev.svg';
+import sarahDevIcon from 'assets/illustrations/sarahDevIcon.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
 export const Intro = () => {
@@ -14,14 +14,14 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>Hi There!</h1>
-          <h4>I’m John and I’m a JAMStack engineer!</h4>
+          <h1>Hi There,</h1>
+          <h4>I'm Sarah, a software engineer in Chicago!</h4>
           <Button as={AnchorLink} href="#contact">
-            Hire me
+            Work With Me
           </Button>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="I’m John and I’m a JAMStack engineer!" />
+          <img src={sarahDevIcon} alt="I’m Sarah, a software engineer in Chicago!" />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>
