@@ -4,72 +4,42 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card, TitleWrap } from 'components/common';
 import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
-import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
+import { Wrapper, Grid, Item, Content, Stats, ViewLive } from './styles';
+import projects from './projects.json';
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
-  // const {
-  //   github: {
-  //     viewer: {
-  //       repositories: { edges },
-  //     },
-  //   },
-  // } = useStaticQuery(
-  //   graphql`
-  //     {
-  //       github {
-  //         viewer {
-  //           repositories(first: 8, orderBy: { field: STARGAZERS, direction: DESC }) {
-  //             edges {
-  //               node {
-  //                 id
-  //                 name
-  //                 url
-  //                 description
-  //                 stargazers {
-  //                   totalCount
-  //                 }
-  //                 forkCount
-  //                 languages(first: 3) {
-  //                   nodes {
-  //                     id,
-  //                     name
-  //                   }
-  //                 }
-  //               }
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   `
+  const showViewLive = true;
   return (
     <Wrapper as={Container} id="projects">
       <h2>Project Highlights</h2>
       <Grid>
-        <Item key={1} as="a" href={''} target="_blank" rel="noopener noreferrer" theme={theme}>
+      {projects.map((project) => (
+        <Item key={project.id} rel="noopener noreferrer" theme={theme}>
           <Card theme={theme}>
             <Content>
-              <h4>test</h4>
-              <p>description</p>
+              <h4>{project.name}</h4>
+              <p>{project.description}</p>
             </Content>
+            {/* <img src={project.imageUrl} /> */}
             <TitleWrap>
               <Stats theme={theme}>
                 <div>
                   <Star color={theme === "light" ? "#000" : "#fff"}/>
-                  <span>5</span>
                 </div>
                 <div>
                   <Fork color={theme === "light" ? "#000" : "#fff"}/>
-                  <span>1</span>
                 </div>
               </Stats>
-              <Languages>
-                {<span key={1}>name</span>}
-              </Languages>
+              {project.showViewLive ? 
+                <ViewLive as="a" href={project.link} target="_blank" rel="noopener noreferrer">
+                    {<span key={project.id}>view live</span>}
+                </ViewLive> 
+              : null}
             </TitleWrap>
           </Card>
         </Item>
+        ))}
       </Grid>
     </Wrapper>
   );

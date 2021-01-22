@@ -65,7 +65,7 @@ export const Stats = styled.div`
   }
 `;
 
-export const Languages = styled.div`
+export const ViewLive = styled.div`
   opacity: 0.5;
   font-size: 14px;
 `;

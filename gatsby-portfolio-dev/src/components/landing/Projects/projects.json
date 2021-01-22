@@ -1,0 +1,51 @@
+[
+    {
+      "id": 0,
+      "name": "GM Binder",
+      "description": "a platform for rpg document creation and storage",
+      "link": "https://gmbinder.com/",
+      "imageUrl": "/icons/telegram.svg",
+      "showViewLive": true
+    },
+    {
+        "id": 1,
+        "name": "Genesis Volatility",
+        "description": "crypto options analytics for individual and institutional traders",
+        "link": "https://gvol.io/",
+        "imageUrl": "/icons/telegram.svg",
+        "showViewLive": true
+    },
+    {
+        "id": 2,
+        "name": "Lendtrade",
+        "description": "real estate loan trading customer outreach wizard",
+        "link": "",
+        "imageUrl": "/icons/telegram.svg",
+        "showViewLive": false
+    },
+    {
+        "id": 3,
+        "name": "FRST",
+        "description": "enterprise-grade blockchain performance index data",
+        "link": "",
+        "imageUrl": "/icons/telegram.svg",
+        "showViewLive": false
+    },
+    {
+        "id": 4,
+        "name": "Blocklight",
+        "description": "one-stop hub for e-commerce metrics and insights",
+        "link": "https://blocklight.io/",
+        "imageUrl": "/icons/telegram.svg",
+        "showViewLive": true
+    },
+    {
+        "id": 5,
+        "name": "Poppins Payroll",
+        "description": "payroll and tax management for in-home staff",
+        "link": "https://poppinspayroll.com/",
+        "imageUrl": "/icons/telegram.svg",
+        "showViewLive": true
+    }
+
+]

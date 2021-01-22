@@ -66,8 +66,6 @@ export const Thumbnail = styled.div`
   }
 
   img {
-    /* width: 60%;
-    margin-left: 25%; */
     width: 65%;
   }
 `;

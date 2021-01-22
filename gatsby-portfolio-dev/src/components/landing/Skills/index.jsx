@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Container, Button } from 'components/common';
-// import dev from 'assets/illustrations/skills.svg';
+import { Container } from 'components/common';
 import social from './socials.json';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
 
@@ -13,7 +11,7 @@ export const Skills = () => {
     <Wrapper id="about">
       <SkillsWrapper as={Container}>
         <Thumbnail>
-          {/* <img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" /> */}
+          {/* <img src={dev} alt="programming languages and tools I know" /> */}
         </Thumbnail>
         <Details theme={theme}>
           <h1>More about me</h1>
@@ -24,12 +22,9 @@ export const Skills = () => {
           making both lifestyle and educational tech content on social. When I'm not coding, I 
           enjoy traveling, hiking, and following basketball.
           </p>
-          {/* <Button as={AnchorLink} href="#contact">
-            Hire me
-          </Button> */}
           {social.map(({ id, name, link, icon }) => (
           <a key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
-            <img width="24" src={icon} alt={name} />
+            <img width="42" src={icon} alt={name} />
           </a>
         ))}
         </Details>

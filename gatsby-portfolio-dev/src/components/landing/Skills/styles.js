@@ -49,6 +49,10 @@ export const Details = styled.div`
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
   }
+
+  img {
+    margin: 10px;
+  }
 `;
 
 export const Thumbnail = styled.div`
@@ -63,3 +67,6 @@ export const Thumbnail = styled.div`
     width: 100%;
   }
 `;
+
+
+
