@@ -21,7 +21,7 @@ export const Projects = () => {
               <h4>{project.name}</h4>
               <p>{project.description}</p>
             </Content>
-            {/* <img src={project.imageUrl} /> */}
+            <img src={project.imageUrl} />
             <TitleWrap>
               <Stats theme={theme}>
                 <div>

@@ -36,8 +36,8 @@ export const Item = styled.div`
 `;
 
 export const Content = styled.div`
-  padding: 1rem 0;
-  min-height: 160px;
+  /* padding: 1rem 0; */
+  /* min-height: 160px; */
 `;
 
 export const Stats = styled.div`

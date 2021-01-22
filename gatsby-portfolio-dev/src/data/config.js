@@ -6,19 +6,18 @@ module.exports = {
   legalName: 'Sarah Amann',
   defaultDescription: 'I’m Sarah, a software engineer in Chicago!',
   socialLinks: {
-    twitter: 'http://www.twitter.com/smakosh',
-    github: 'https://github.com/smakosh',
-    linkedin: 'https://www.linkedin.com/in/ismail-ghallou-630149122/',
-    instagram: 'https://instagram.com/smakosh19',
-    youtube: 'https://www.youtube.com/user/smakoshthegamer',
-    google: 'https://plus.google.com/u/0/+IsmailSmakoshGhallou',
+    twitter: 'http://www.twitter.com/itssarahamann',
+    github: 'https://github.com/SarahMAmann',
+    linkedin: 'https://www.linkedin.com/in/sarah-marie-amann/',
+    instagram: 'https://instagram.com/sarah.amann',
+    youtube: 'https://www.youtube.com/channel/UCoftN-pj8_ixoDZ6r767RTQ'
   },
-  googleAnalyticsID: 'UA-88875900-4',
+  // googleAnalyticsID: 'UA-88875900-4',
   themeColor: '#6b63ff',
   backgroundColor: '#6b63ff',
   social: {
-    facebook: 'appId',
-    twitter: '@smakosh',
+    // facebook: 'appId',
+    twitter: '@itssarahamann',
   },
   address: {
     city: 'City',
@@ -27,7 +26,7 @@ module.exports = {
     zipCode: 'ZipCode',
   },
   contact: {
-    email: 'email',
+    email: 'sarahamann96@gmail.com',
     phone: 'phone number',
   },
   foundingDate: '2021',
