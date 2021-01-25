@@ -51,7 +51,6 @@
     "babel-plugin-styled-components": "^1.10.6",
     "eslint": "^5.14.1",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-wesbos": "0.0.19",
     "eslint-plugin-html": "^5.0.3",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
