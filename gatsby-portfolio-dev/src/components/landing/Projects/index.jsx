@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card, TitleWrap } from 'components/common';
 import Star from 'components/common/Icons/Star';
