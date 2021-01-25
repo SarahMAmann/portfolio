@@ -19,15 +19,15 @@
     },
     {
       "id": 3,
+      "name": "LinkedIn",
+      "link": "https://linkedin.com/in/sarah-marie-amann/",
+      "icon": "/icons/linkedin.svg"
+    },
+    {
+      "id": 4,
       "name": "Github",
       "link": "https://github.com/SarahMAmann",
       "icon": "/icons/github.svg"
-    },
-    {
-        "id": 4,
-        "name": "LinkedIn",
-        "link": "https://linkedin.com/in/sarah-marie-amann/",
-        "icon": "/icons/linkedin.svg"
     }
 ]
   
