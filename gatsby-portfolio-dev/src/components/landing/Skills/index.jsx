@@ -3,6 +3,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
 import social from './socials.json';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import toolbox from 'assets/illustrations/toolbox.svg';
 
 export const Skills = () => {
   const { theme } = useContext(ThemeContext);
@@ -11,7 +12,7 @@ export const Skills = () => {
     <Wrapper id="about">
       <SkillsWrapper as={Container}>
         <Thumbnail>
-          {/* <img src={dev} alt="programming languages and tools I know" /> */}
+          <img src={toolbox} alt="programming languages and tools I know" />
         </Thumbnail>
         <Details theme={theme}>
           <h1>More about me</h1>
