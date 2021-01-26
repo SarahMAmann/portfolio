@@ -30,4 +30,10 @@ export const InputField = styled.div`
     color: #a7a7a7;
   }
   }
+
+  .hidden {
+    visibility: hidden;
+  }
 `;
+
+

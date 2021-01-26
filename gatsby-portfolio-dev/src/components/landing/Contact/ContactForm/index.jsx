@@ -31,8 +31,11 @@ class ContactForm extends React.Component {
   render() {
     const { name, email, message } = this.state;
     return (
-      <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" onSubmit={this.handleSubmit} >
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={this.handleSubmit} >
         <InputField>
+        <p class="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
         <Input type="text" placeholder="Full name*" name="name" value={name} onChange={this.handleChange} />   
         </InputField>
         <InputField>
@@ -41,7 +44,6 @@ class ContactForm extends React.Component {
         <InputField>
           <textarea name="message" placeholder="Message*" value={message} onChange={this.handleChange} ></textarea>
         </InputField>
-        <div data-netlify-recaptcha="true"></div>
         <Center>
           <Button type="submit">Submit</Button>
         </Center>
