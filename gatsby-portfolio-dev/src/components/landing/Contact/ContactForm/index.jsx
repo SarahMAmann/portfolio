@@ -41,7 +41,7 @@ class ContactForm extends React.Component {
         <InputField>
           <textarea name="message" placeholder="Message*" value={message} onChange={this.handleChange} ></textarea>
         </InputField>
-        <Center data-netlify-recaptcha="true"></Center>
+        <div data-netlify-recaptcha="true"></div>
         <Center>
           <Button type="submit">Submit</Button>
         </Center>
