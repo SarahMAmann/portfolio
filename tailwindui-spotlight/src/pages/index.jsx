@@ -23,9 +23,9 @@ import logoGvol from '@/images/logos/gvol-logo.png'
 import logoFRST from '@/images/logos/frst-logo.png'
 import logoWWC from '@/images/logos/wwc-logo.png'
 
-import { generateRssFeed } from '@/lib/generateRssFeed'
+// import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
-import { formatDate } from '@/lib/formatDate'
+// import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props) {
   return (
@@ -73,33 +73,33 @@ function BriefcaseIcon(props) {
   )
 }
 
-function ArrowDownIcon(props) {
-  return (
-    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-      <path
-        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
+// function ArrowDownIcon(props) {
+//   return (
+//     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+//       <path
+//         d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
+//         strokeWidth="1.5"
+//         strokeLinecap="round"
+//         strokeLinejoin="round"
+//       />
+//     </svg>
+//   )
+// }
 
-function Article({ article }) {
-  return (
-    <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
-    </Card>
-  )
-}
+// function Article({ article }) {
+//   return (
+//     <Card as="article">
+//       <Card.Title href={`/articles/${article.slug}`}>
+//         {article.title}
+//       </Card.Title>
+//       <Card.Eyebrow as="time" dateTime={article.date} decorate>
+//         {formatDate(article.date)}
+//       </Card.Eyebrow>
+//       <Card.Description>{article.description}</Card.Description>
+//       <Card.Cta>Read article</Card.Cta>
+//     </Card>
+//   )
+// }
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
@@ -337,7 +337,7 @@ export default function Home({ articles }) {
 
 export async function getStaticProps() {
   if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
+    // await generateRssFeed()
   }
 
   return {
