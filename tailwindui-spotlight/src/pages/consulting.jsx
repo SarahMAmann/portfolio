@@ -1,10 +1,14 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoFRST from '@/images/logos/frst_logo.png'
-import Image from 'next/image'
+
+import logoInfinispace from '@/images/logos/infinispace-logo.png'
+import logoDove from '@/images/logos/dove-logo.png'
+import logoAngelFlight from '@/images/logos/angel-flight-logo.png'
+
 
 function ToolsSection({ children, ...props }) {
   return (
@@ -45,7 +49,7 @@ export default function Consulting() {
           <ToolsSection title="Contract">
               <div className="flex">
                 <div className="relative mt-1 mr-3 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                <a href="https://www.dove.com/us/en/home.html" target="_blank"> <Image src={logoFRST} alt="" className="h-7 w-7" unoptimized /> </a>
+                <a href="https://www.dove.com/us/en/home.html" target="_blank"> <Image src={logoDove} alt="" className="h-7 w-7" unoptimized /> </a>
                 </div>
                 <Tool title="Dove">
                   Participated in an advisory council to help the Dove corporation define a meaningful role to play 
@@ -57,7 +61,7 @@ export default function Consulting() {
               <div className="flex">
                 <div className="relative mt-1 mr-3 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                   <a href="https://www.angelflightwest.org/?gclid=CjwKCAiAleOeBhBdEiwAfgmXfyf1bQdySutsja5RIxvzojnRjXKRylj6uB0JwmeyQl6tAkah2HfnjRoCwWYQAvD_BwE" target="_blank">
-                    <Image src={logoFRST} alt="" className="h-7 w-7" unoptimized />
+                    <Image src={logoAngelFlight} alt="" className="h-7 w-7" unoptimized />
                   </a>
                 </div>
                 <Tool title="Angel Flight">
@@ -68,7 +72,7 @@ export default function Consulting() {
               </div>
             <div className="flex">
               <div className="relative mt-1 mr-3 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                <a href="https://infinispace.io/" target="_blank"><Image src={logoFRST} alt="" className="h-7 w-7" unoptimized /></a>
+                <a href="https://infinispace.io/" target="_blank"><Image src={logoInfinispace} alt="" className="h-7 w-7" unoptimized /></a>
               </div>
               <Tool title="Infinispace">
                 Consulted on gamified social metaverse and NFT platform.

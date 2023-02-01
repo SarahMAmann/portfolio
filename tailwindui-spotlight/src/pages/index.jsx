@@ -8,7 +8,6 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   TwitterIcon,
-  InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
   YouTubeIcon
@@ -18,15 +17,11 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 
-import logoAmberdata from '@/images/logos/amberdata_logo_color.svg'
-import logoGvol from '@/images/logos/gvol-logo-3d.png'
-import logoFRST from '@/images/logos/frst_logo.png'
-import logoWWC from '@/images/logos/wwc.png'
+import logoAmberdata from '@/images/logos/amberdata-logo.png'
+import logoGvol from '@/images/logos/gvol-logo.png'
+import logoFRST from '@/images/logos/frst-logo.png'
+import logoWWC from '@/images/logos/wwc-logo.png'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'

@@ -3,11 +3,13 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+
+import logoGMBinder from '@/images/logos/gm-binder-logo.png'
+import logoPoppins from '@/images/logos/poppins-payroll-logo.png'
+import logoCarbonFootprint from '@/images/logos/pork-logo.png'
+import logoImpact from '@/images/logos/impact-logo.png'
+import logoAmberdata from '@/images/logos/amberdata-logo.png'
+
 
 const projects = [
   {
@@ -15,35 +17,35 @@ const projects = [
     description:
       'Crypto options analytics for institutional and individual traders.',
     link: { href: 'https://pro.amberdata.io/', label: 'pro.amberdata.io' },
-    logo: logoPlanetaria,
+    logo: logoAmberdata,
   },
   {
     name: 'IMPACT Community Action Partnership',
     description:
       'Safer online alternative to food pantry shopping.',
     link: { href: 'https://wewritecode.com/work/platform-buildout-for-online-food-pantry/', label: 'impactcap.org' },
-    logo: logoAnimaginary,
+    logo: logoImpact,
   },
   {
     name: 'Carbon Footprint Calculator',
     description:
       'National Pork Board software for tracking carbon emissions of producer farms.',
     link: { href: 'https://cfc.pork.org/account/login', label: 'cfc.pork.org' },
-    logo: logoHelioStream,
+    logo: logoCarbonFootprint,
   },
   {
     name: 'Poppins Payroll',
     description:
       'Payroll and tax management and reports for in-home staff.',
     link: { href: 'https://www.poppinspayroll.com/', label: 'poppinspayroll.com' },
-    logo: logoCosmos,
+    logo: logoPoppins,
   },
   {
     name: 'GM Binder',
     description:
       'A platform for rpg document creation and storage.',
     link: { href: 'https://www.gmbinder.com/', label: 'gmbinder.com' },
-    logo: logoOpenShuttle,
+    logo: logoGMBinder,
   },
 ]
 
@@ -70,7 +72,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Software I've written."
-        intro="I’ve worked on many projects over the years, but these are a few I've made significant contributions to that are currently available and in use by both major corporations and individual users."
+        intro="I’ve worked on many projects over the years, but these are a few I've made significant contributions to that are currently in use by both major corporations and individual users."
       >
         <ul
           role="list"
