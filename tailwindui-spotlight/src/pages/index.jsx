@@ -11,6 +11,7 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
+  YouTubeIcon
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -276,22 +277,22 @@ export default function Home({ articles }) {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/itssarahbenzo"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
             <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
+              href="https://www.youtube.com/channel/UCoftN-pj8_ixoDZ6r767RTQ"
+              aria-label="Follow on YouTube"
+              icon={YouTubeIcon}
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/SarahMAmann"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sarah-marie-benson/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
