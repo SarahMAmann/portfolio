@@ -310,7 +310,7 @@ export default function Home({ articles }) {
               I&apos;ve worked with a team to deliver results in a fast-paced,
               early stage startup environment.
 
-              I&apos;ve written code that's responsible for payment processing of hundreds of thousands of dollars in funds monthly.
+              I&apos;ve written code that&apos;s responsible for payment processing of hundreds of thousands of dollars in funds monthly.
 
               I oversaw all Web3 systems integration in a crypto options trading analytics product - 
               contributing significantly to frontend architecture and data visualization as well as the API - and 

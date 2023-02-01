@@ -152,7 +152,7 @@ export default function DevRel() {
             One of my favorite ways to share my ideas about software is through content creation.
             I&apos;ve had the opportunity to work as a developer advocate for Gelato Network, curating written and video
             documentation of their smart contract automation platform. In addition to creating videos for blockchain developers
-            on my own educational YouTube channel, I've been able to partner 
+            on my own educational YouTube channel, I&apos;ve been able to partner 
             with big industry names like Thirdweb, The DeSo Foundation and others to make video tutorials for their social outlets.
             Check out some highlights here.
             </p>
