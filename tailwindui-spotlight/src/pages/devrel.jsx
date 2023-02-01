@@ -61,7 +61,7 @@ function MailIcon(props) {
   )
 }
 
-export default function About() {
+export default function DevRel() {
   return (
     <>
       <Head>

@@ -306,13 +306,12 @@ export default function Home({ articles }) {
               <Article key={article.slug} article={article} />
             ))} */}
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              I love building software, and have spent the last several years working on a variety of applications in
-              industries including healthcare, construction, finance and more. With contributions in frontend,
+              I love building software, and have spent the last several years working on applications in a 
+              variety of industries including healthcare, construction, finance and more. With contributions in frontend,
               backend, and devops spanning a range of programming languages and tools, I've participated in the full software development lifecycle from requirements gathering 
               to agile development to quality assurance.<br></br><br></br>
               
-              I've worked with a team to both design and develop the frontend application 
-              of an enterprise-grade blockchain analytics platform and deliver results in a fast-paced,
+              I've worked with a team to deliver results in a fast-paced,
               early stage startup environment.
 
               I've written code that's responsible for payment processing of hundreds of thousands of dollars in funds monthly.
