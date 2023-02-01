@@ -21,6 +21,12 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
+
+import logoAmberdata from '@/images/logos/amberdata_logo_color.svg'
+import logoGvol from '@/images/logos/gvol-logo-3d.png'
+import logoFRST from '@/images/logos/frst_logo.png'
+import logoWWC from '@/images/logos/wwc.png'
+
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -139,35 +145,35 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Amberdata',
+      title: 'Software Engineer',
+      logo: logoAmberdata,
+      start: '2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
+      company: 'Genesis Volatiity (Acquired by Amberdata)',
+      title: 'Web3 Frontend Lead',
+      logo: logoGvol,
+      start: '2020',
+      end: '2022',
+    },
+    {
+      company: 'We Write Code',
+      title: 'Software Developer',
+      logo: logoWWC,
+      start: '2020',
+      end: '2022',
+    },
+    {
+      company: 'FRST',
+      title: 'Software Developer',
+      logo: logoFRST,
+      start: '2019',
       end: '2019',
-    },
-    {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
     },
   ]
 
@@ -251,7 +257,7 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          Sarah Benson - Software engineer, advisor, and creator
         </title>
         <meta
           name="description"
@@ -261,13 +267,11 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Software engineer, advisor, and creator.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I’m Sarah, a software engineer based in Chicago. I currently work on the blockchain team at Amberdata, where we develop
+            technologies that deliver the world's leading comprehensive digital assets dataset.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -297,12 +301,13 @@ export default function Home({ articles }) {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-            {articles.map((article) => (
+            {/* {articles.map((article) => (
               <Article key={article.slug} article={article} />
-            ))}
+            ))} */}
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">blah blah paragraph about me Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>

@@ -11,35 +11,35 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'AD Derivatives',
     description:
       'Creating technology to empower civilians to explore space on their own terms.',
     link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'IMPACT Community Action Partnership',
     description:
       'High performance web animation library, hand-written in optimized WASM.',
     link: { href: '#', label: 'github.com' },
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'Carbon Footprint Calculator',
     description:
       'Real-time video streaming library, optimized for interstellar transmission.',
     link: { href: '#', label: 'github.com' },
     logo: logoHelioStream,
   },
   {
-    name: 'cosmOS',
+    name: 'Poppins Payroll',
     description:
       'The operating system that powers our Planetaria space shuttles.',
     link: { href: '#', label: 'github.com' },
     logo: logoCosmos,
   },
   {
-    name: 'OpenShuttle',
+    name: 'GM Binder',
     description:
       'The schematics for the first rocket I designed that successfully made it to orbit.',
     link: { href: '#', label: 'github.com' },
@@ -62,15 +62,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Sarah Benson</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Software I've written."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Software I've written."
+        intro="I’ve worked on many projects over the years, but these are a few I've made significant contributions to that are currently available and in use by both major corporations and individual users."
       >
         <ul
           role="list"
