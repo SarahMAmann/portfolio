@@ -12,6 +12,30 @@ import {
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
+import { Card } from '@/components/Card'
+import { Section } from '@/components/Section'
+
+function SpeakingSection({ children, ...props }) {
+  return (
+    <Section {...props}>
+      <div className="space-y-16">{children}</div>
+    </Section>
+  )
+}
+
+function Appearance({ title, description, event, cta, href }) {
+  return (
+    <Card as="article">
+      <Card.Title as="h3" href={href}>
+        {title}
+      </Card.Title>
+      <Card.Eyebrow decorate>{event}</Card.Eyebrow>
+      <Card.Description>{description}</Card.Description>
+      <Card.Cta>{cta}</Card.Cta>
+    </Card>
+  )
+}
+
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
     <li className={clsx(className, 'flex')}>
@@ -41,7 +65,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>DevRel - Sarah Benson</title>
         <meta
           name="description"
           content="I’m Spencer Sharp. I live in New York City, where I design the future."
@@ -61,11 +85,41 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
+              I’ve been a developer advocate, created dozens of developer education videos, and
+              interviewed industry leaders at crypto events around the world.
             </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>
+            <div className="mt-24 space-y-7">
+              <SpeakingSection title="Videos">
+              <Appearance
+                href="https://www.youtube.com/watch?v=Axv9xxCSmdQ"
+                title="Interviewing Web3 Founders at DevConnect"
+                description=""
+                event="DevConnect Amsterdam 2022"
+                cta="Watch video"
+              />
+              <Appearance
+                href="https://www.youtube.com/watch?v=XAQupxAOrK8"
+                title="DeSo x Metamask: Crypto Key Pairs + Signing Cross-Chain Tx's"
+                description=""
+                event="The DeSo Foundation"
+                cta="Watch video"
+              />
+              <Appearance
+                href="https://www.youtube.com/watch?v=sUnMDRzVbqs"
+                title="How to Render NFT Metadata In a React App (NFT Metadata Tutorial)"
+                description=""
+                event="Thirdweb"
+                cta="Watch video"
+              />
+              <Appearance
+                href="https://www.youtube.com/watch?v=P5jetKCsupo"
+                title="Build Bored Ape Yacht Club with Next.js, Tailwind & Thirdweb (NFT Drop Tutorial)"
+                description=""
+                event="Clever Programmer"
+                cta="Watch video"
+              />
+            </SpeakingSection>
+              {/* <p>
                 I’ve loved making things for as long as I can remember, and
                 wrote my first program when I was 6 years old, just two weeks
                 after my mom brought home the brand new Macintosh LC 550 that I
@@ -90,11 +144,19 @@ export default function About() {
                 civilian space suits and manned shuttle kits you can assemble at
                 home so that the next generation of kids really <em>can</em>{' '}
                 make it to orbit — from the comfort of their own backyards.
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="lg:pl-20">
-            <ul role="list">
+            <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+            One of my favorite ways to share my ideas about software is through content creation.
+            I've had the opportunity to work as a developer advocate for Gelato Network, curating written and video
+            documentation of their smart contract automation platform. In addition to creating videos for blockchain developers
+            on my own educational YouTube channel, I've been able to partner 
+            with big industry names like Thirdweb, The DeSo Foundation and others to make video tutorials for their social outlets.
+            Check out some highlights here.
+            </p>
+            {/* <ul role="list">
               <SocialLink href="#" icon={TwitterIcon}>
                 Follow on Twitter
               </SocialLink>
@@ -114,7 +176,7 @@ export default function About() {
               >
                 spencer@planetaria.tech
               </SocialLink>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </Container>

@@ -3,6 +3,8 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import logoFRST from '@/images/logos/frst_logo.png'
+import Image from 'next/image'
 
 function ToolsSection({ children, ...props }) {
   return (
@@ -29,88 +31,49 @@ export default function Uses() {
   return (
     <>
       <Head>
-        <title>Uses - Spencer Sharp</title>
+        <title>Consulting - Sarah Benson</title>
         <meta
           name="description"
-          content="Software I use, gadgets I love, and other things I recommend."
+          content="Projects I've advised on Web3 integration strategy."
         />
       </Head>
       <SimpleLayout
-        title="Software I use, gadgets I love, and other things I recommend."
-        intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+        title="Projects I've advised on Web3 integration strategy."
+        intro="Occasionally I take on consulting work in specific cases where I feel there is strong alignment with a project's blockchain goals."
       >
         <div className="space-y-20">
-          <ToolsSection title="Workstation">
-            <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-              I was using an Intel-based 16” MacBook Pro prior to this and the
-              difference is night and day. I’ve never heard the fans turn on a
-              single time, even under the incredibly heavy loads I put it
-              through with our various launch simulations.
-            </Tool>
-            <Tool title="Apple Pro Display XDR (Standard Glass)">
-              The only display on the market if you want something HiDPI and
-              bigger than 27”. When you’re working at planetary scale, every
-              pixel you can get counts.
-            </Tool>
-            <Tool title="IBM Model M SSK Industrial Keyboard">
-              They don’t make keyboards the way they used to. I buy these any
-              time I see them go up for sale and keep them in storage in case I
-              need parts or need to retire my main.
-            </Tool>
-            <Tool title="Apple Magic Trackpad">
-              Something about all the gestures makes me feel like a wizard with
-              special powers. I really like feeling like a wizard with special
-              powers.
-            </Tool>
-            <Tool title="Herman Miller Aeron Chair">
-              If I’m going to slouch in the worst ergonomic position imaginable
-              all day, I might as well do it in an expensive chair.
-            </Tool>
-          </ToolsSection>
-          <ToolsSection title="Development tools">
-            <Tool title="Sublime Text 4">
-              I don’t care if it’s missing all of the fancy IDE features
-              everyone else relies on, Sublime Text is still the best text
-              editor ever made.
-            </Tool>
-            <Tool title="iTerm2">
-              I’m honestly not even sure what features I get with this that
-              aren’t just part of the macOS Terminal but it’s what I use.
-            </Tool>
-            <Tool title="TablePlus">
-              Great software for working with databases. Has saved me from
-              building about a thousand admin interfaces for my various projects
-              over the years.
-            </Tool>
-          </ToolsSection>
-          <ToolsSection title="Design">
-            <Tool title="Figma">
-              We started using Figma as just a design tool but now it’s become
-              our virtual whiteboard for the entire company. Never would have
-              expected the collaboration features to be the real hook.
-            </Tool>
-          </ToolsSection>
-          <ToolsSection title="Productivity">
-            <Tool title="Alfred">
-              It’s not the newest kid on the block but it’s still the fastest.
-              The Sublime Text of the application launcher world.
-            </Tool>
-            <Tool title="Reflect">
-              Using a daily notes system instead of trying to keep things
-              organized by topics has been super powerful for me. And with
-              Reflect, it’s still easy for me to keep all of that stuff
-              discoverable by topic even though all of my writing happens in the
-              daily note.
-            </Tool>
-            <Tool title="SavvyCal">
-              Great tool for scheduling meetings while protecting my calendar
-              and making sure I still have lots of time for deep work during the
-              week.
-            </Tool>
-            <Tool title="Focus">
-              Simple tool for blocking distracting websites when I need to just
-              do the work and get some momentum going.
-            </Tool>
+          <ToolsSection title="Contract">
+              <div className="flex">
+                <div className="relative mt-1 mr-3 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                <a href="https://www.dove.com/us/en/home.html" target="_blank"> <Image src={logoFRST} alt="" className="h-7 w-7" unoptimized /> </a>
+                </div>
+                <Tool title="Dove">
+                  Participated in an advisory council to help the Dove corporation define a meaningful role to play 
+                  in the metaverse and Web3 spaces to highlight women and girls. 
+                  Offered perspectives and insights that informed solutions the brand was buliding, 
+                  as well as validation and co-creation of ideas.
+                </Tool>
+              </div>
+              <div className="flex">
+                <div className="relative mt-1 mr-3 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                  <a href="https://www.angelflightwest.org/?gclid=CjwKCAiAleOeBhBdEiwAfgmXfyf1bQdySutsja5RIxvzojnRjXKRylj6uB0JwmeyQl6tAkah2HfnjRoCwWYQAvD_BwE" target="_blank">
+                    <Image src={logoFRST} alt="" className="h-7 w-7" unoptimized />
+                  </a>
+                </div>
+                <Tool title="Angel Flight">
+                  Advised Angel Flight in technical best practices and strategy for their organization
+                  to use blockchain technology to further their mission of connecting volunteer pilots with patients
+                  in need of free transportation to medical appointments.
+                </Tool>
+              </div>
+            <div className="flex">
+              <div className="relative mt-1 mr-3 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                <a href="https://infinispace.io/" target="_blank"><Image src={logoFRST} alt="" className="h-7 w-7" unoptimized /></a>
+              </div>
+              <Tool title="Infinispace">
+                Consulted on gamified social metaverse and NFT platform.
+              </Tool>
+            </div>
           </ToolsSection>
         </div>
       </SimpleLayout>

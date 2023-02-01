@@ -40,6 +40,13 @@ const articles = [
     date: '2021-07-13',
     url: 'https://wewritecode.com/contextualizing-information-with-data-visualization/',
     key: '4'
+  },
+  {
+    title: '$42,000/yr Passive Income with Helium Hotspot',
+    description: 'Recently, I got my hands on a Helium hotspot, and I wanted to see what this thing does and if it’s actually a viable source of passive income. Helium is a blockchain project that uses hotspots to create a peer-to-peer wireless network where IoT devices can send data to and from the internet.',
+    date: '2021-05-06',
+    url: 'https://medium.com/@guavatech/3-200-yr-passive-income-with-helium-hotspot-e300bb11832b',
+    key: '5'
   }
 ]
 

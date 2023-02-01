@@ -1,8 +1,9 @@
 import Head from 'next/head'
-
+import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import portraitImage from '@/images/portrait.jpg'
 
 function SpeakingSection({ children, ...props }) {
   return (
@@ -29,34 +30,58 @@ export default function Speaking() {
   return (
     <>
       <Head>
-        <title>Speaking - Spencer Sharp</title>
+        <title>DevRel - Sarah Benson</title>
         <meta
           name="description"
-          content="I’ve spoken at events all around the world and been interviewed for many podcasts."
+          content="I’ve been a developer advocate, created dozens of developer education videos, and
+          interviewed industry leaders at crypto events around the world."
         />
       </Head>
+      <div className='flex'>
       <SimpleLayout
-        title="I’ve spoken at events all around the world and been interviewed for many podcasts."
-        intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
+        title="I’ve been a developer advocate, created dozens of developer education videos, and
+        interviewed industry leaders at crypto events around the world."
+        intro="One of my favorite ways to share my ideas about software is through content creation.
+        I've had the opportunity to work as a developer advocate for Gelato Network, curating written and video
+        documentation of their smart contract automation platform. In addition to creating videos for blockchain developers
+        on my own educational YouTube channel, I've been able to partner 
+        with big industry names like Thirdweb, The DeSo Foundation and others to make video tutorials for their social outlets.
+        Check out some highlights here."
       >
+
+        
         <div className="space-y-20">
-          <SpeakingSection title="Conferences">
+          <SpeakingSection title="Videos">
             <Appearance
-              href="#"
-              title="In space, no one can watch you stream — until now"
-              description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
-              event="SysConf 2021"
+              href="https://www.youtube.com/watch?v=Axv9xxCSmdQ"
+              title="Interviewing Web3 Founders at DevConnect"
+              description=""
+              event="DevConnect Amsterdam 2022"
               cta="Watch video"
             />
             <Appearance
-              href="#"
-              title="Lessons learned from our first product recall"
-              description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
-              event="Business of Startups 2020"
+              href="https://www.youtube.com/watch?v=XAQupxAOrK8"
+              title="DeSo x Metamask: Crypto Key Pairs + Signing Cross-Chain Tx's"
+              description=""
+              event="The DeSo Foundation"
+              cta="Watch video"
+            />
+            <Appearance
+              href="https://www.youtube.com/watch?v=sUnMDRzVbqs"
+              title="How to Render NFT Metadata In a React App (NFT Metadata Tutorial)"
+              description=""
+              event="Thirdweb"
+              cta="Watch video"
+            />
+            <Appearance
+              href="https://www.youtube.com/watch?v=P5jetKCsupo"
+              title="Build Bored Ape Yacht Club with Next.js, Tailwind & Thirdweb (NFT Drop Tutorial)"
+              description=""
+              event="Clever Programmer"
               cta="Watch video"
             />
           </SpeakingSection>
-          <SpeakingSection title="Podcasts">
+          {/* <SpeakingSection title="Podcasts">
             <Appearance
               href="#"
               title="Using design as a competitive advantage"
@@ -78,9 +103,25 @@ export default function Speaking() {
               event="How They Work Radio, September 2021"
               cta="Listen to podcast"
             />
-          </SpeakingSection>
+          </SpeakingSection> */}
         </div>
       </SimpleLayout>
+
+
+
+
+      <div className="lg:pl-20">
+            <div className="max-w-xs px-2.5 lg:max-w-none">
+              <Image
+                src={portraitImage}
+                alt=""
+                sizes="(min-width: 1024px) 32rem, 20rem"
+                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              />
+            </div>
+          </div>
+
+      </div>
     </>
   )
 }
