@@ -267,8 +267,8 @@ export default function Home({ articles }) {
             Software engineer, advisor, and creator.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Sarah, a software engineer based in Chicago. I currently work on the blockchain team at Amberdata, where we develop
-            technologies that deliver the world's leading comprehensive digital assets dataset.
+            I&apos;m Sarah, a software engineer based in Chicago. I currently work on the blockchain team at Amberdata, where we develop
+            technologies that deliver the world&apos;s leading comprehensive digital assets dataset.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -304,13 +304,13 @@ export default function Home({ articles }) {
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
               I love building software, and have spent the last several years working on applications in a 
               variety of industries including healthcare, construction, finance and more. With contributions in frontend,
-              backend, and devops spanning a range of programming languages and tools, I've participated in the full software development lifecycle from requirements gathering 
+              backend, and devops spanning a range of programming languages and tools, I&apos;ve participated in the full software development lifecycle from requirements gathering 
               to agile development to quality assurance.<br></br><br></br>
               
-              I've worked with a team to deliver results in a fast-paced,
+              I&apos;ve worked with a team to deliver results in a fast-paced,
               early stage startup environment.
 
-              I've written code that's responsible for payment processing of hundreds of thousands of dollars in funds monthly.
+              I&apos;ve written code that's responsible for payment processing of hundreds of thousands of dollars in funds monthly.
 
               I oversaw all Web3 systems integration in a crypto options trading analytics product - 
               contributing significantly to frontend architecture and data visualization as well as the API - and 
@@ -319,10 +319,10 @@ export default function Home({ articles }) {
               In my current role I continue to make improvements and optimizations to internal systems and
               help move my team towards best practices in engineering standards.<br></br><br></br>
 
-              I'm passionate about creating in general, and have also built a successful 
+              I&apos;m passionate about creating in general, and have also built a successful 
               business around making both lifestyle and educational tech content on social.
               
-              When I'm not coding, I enjoy traveling, hiking, and following basketball.
+              When I&apos;m not coding, I enjoy traveling, hiking, and following basketball.
             </p>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">

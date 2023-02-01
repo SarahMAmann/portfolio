@@ -85,7 +85,7 @@ export default function DevRel() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’ve been a developer advocate, created dozens of developer education videos, and
+              I&apos;ve been a developer advocate, created dozens of developer education videos, and
               interviewed industry leaders at crypto events around the world.
             </h1>
             <div className="mt-24 space-y-7">
@@ -150,7 +150,7 @@ export default function DevRel() {
           <div className="lg:pl-20">
             <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
             One of my favorite ways to share my ideas about software is through content creation.
-            I've had the opportunity to work as a developer advocate for Gelato Network, curating written and video
+            I&apos;ve had the opportunity to work as a developer advocate for Gelato Network, curating written and video
             documentation of their smart contract automation platform. In addition to creating videos for blockchain developers
             on my own educational YouTube channel, I've been able to partner 
             with big industry names like Thirdweb, The DeSo Foundation and others to make video tutorials for their social outlets.
