@@ -217,10 +217,12 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
+      {/* <Link href="./pages/resume/Sarah-Benson-Resume.pdf" download> */}
+        <Button href="#" variant="secondary" className="group mt-6 w-full">
+          Download CV
+          <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        </Button>
+      {/* </Link> */}
     </div>
   )
 }
@@ -304,7 +306,30 @@ export default function Home({ articles }) {
             {/* {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))} */}
-            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">blah blah paragraph about me Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              I love building software, and have spent the last several years working on a variety of applications in
+              industries including healthcare, construction, finance and more. With contributions in frontend,
+              backend, and devops spanning a range of programming languages and tools, I've participated in the full software development lifecycle from requirements gathering 
+              to agile development to quality assurance.<br></br><br></br>
+              
+              I've worked with a team to both design and develop the frontend application 
+              of an enterprise-grade blockchain analytics platform and deliver results in a fast-paced,
+              early stage startup environment.
+
+              I've written code that's responsible for payment processing of hundreds of thousands of dollars in funds monthly.
+
+              I oversaw all Web3 systems integration in a crypto options trading analytics product - 
+              contributing significantly to frontend architecture and data visualization as well as the API - and 
+              assisted in preparation and successful execution of a major company merger when the product was acquired.<br></br><br></br>
+
+              In my current role I continue to make improvements and optimizations to internal systems and
+              help move my team towards best practices in engineering standards.<br></br><br></br>
+
+              I'm passionate about creating in general, and have also built a successful 
+              business around making both lifestyle and educational tech content on social.
+              
+              When I'm not coding, I enjoy traveling, hiking, and following basketball.
+            </p>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* <Newsletter /> */}
