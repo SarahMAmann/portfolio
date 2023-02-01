@@ -13,36 +13,36 @@ const projects = [
   {
     name: 'AD Derivatives',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'Crypto options analytics for institutional and individual traders.',
+    link: { href: 'https://pro.amberdata.io/', label: 'pro.amberdata.io' },
     logo: logoPlanetaria,
   },
   {
     name: 'IMPACT Community Action Partnership',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'Safer online alternative to food pantry shopping.',
+    link: { href: 'https://wewritecode.com/work/platform-buildout-for-online-food-pantry/', label: 'impactcap.org' },
     logo: logoAnimaginary,
   },
   {
     name: 'Carbon Footprint Calculator',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      'National Pork Board software for tracking carbon emissions of producer farms.',
+    link: { href: 'https://cfc.pork.org/account/login', label: 'cfc.pork.org' },
     logo: logoHelioStream,
   },
   {
     name: 'Poppins Payroll',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
+      'Payroll and tax management and reports for in-home staff.',
+    link: { href: 'https://www.poppinspayroll.com/', label: 'poppinspayroll.com' },
     logo: logoCosmos,
   },
   {
     name: 'GM Binder',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
+      'A platform for rpg document creation and storage.',
+    link: { href: 'https://www.gmbinder.com/', label: 'gmbinder.com' },
     logo: logoOpenShuttle,
   },
 ]

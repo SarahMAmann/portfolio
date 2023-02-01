@@ -68,7 +68,7 @@ export default function About() {
         <title>DevRel - Sarah Benson</title>
         <meta
           name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
+          content=""
         />
       </Head>
       <Container className="mt-16 sm:mt-32">

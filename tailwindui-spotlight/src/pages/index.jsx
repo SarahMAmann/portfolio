@@ -217,12 +217,10 @@ function Resume() {
           </li>
         ))}
       </ol>
-      {/* <Link href="./pages/resume/Sarah-Benson-Resume.pdf" download> */}
-        <Button href="#" variant="secondary" className="group mt-6 w-full">
-          Download CV
-          <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-        </Button>
-      {/* </Link> */}
+      {/* <Button href="./pages/resume/Sarah-Benson-Resume.pdf" variant="secondary" className="group mt-6 w-full" download>
+        Download CV
+        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+      </Button> */}
     </div>
   )
 }
@@ -263,7 +261,8 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Sarah, a software engineer based in Chicago. I currently work on the blockchain team at Amberdata, where we develop
+          technologies that deliver the world's leading comprehensive digital assets dataset."
         />
       </Head>
       <Container className="mt-9">
