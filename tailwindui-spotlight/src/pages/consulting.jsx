@@ -54,7 +54,7 @@ export default function Consulting() {
                 <Tool title="Dove">
                   Participated in an advisory council to help the Dove corporation define a meaningful role to play 
                   in the metaverse and Web3 spaces to highlight women and girls. 
-                  Offered perspectives and insights that informed solutions the brand was buliding, 
+                  Offered perspectives and insights that informed solutions the brand was building, 
                   as well as validation and co-creation of ideas.
                 </Tool>
               </div>
