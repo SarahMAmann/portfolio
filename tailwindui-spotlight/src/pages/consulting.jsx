@@ -43,7 +43,7 @@ export default function Consulting() {
       </Head>
       <SimpleLayout
         title="Projects I've advised on Web3 integration strategy."
-        intro="Occasionally I take on consulting work in specific cases where I feel there is strong alignment with a project's blockchain goals."
+        // intro="Occasionally I take on consulting work in specific cases where I feel there is strong alignment with a project's blockchain goals."
       >
         <div className="space-y-20">
           <ToolsSection title="Contract">
