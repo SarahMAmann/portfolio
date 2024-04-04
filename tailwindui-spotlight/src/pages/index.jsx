@@ -324,15 +324,15 @@ export default function Home({ articles }) {
             hi, I&apos;m Sarah.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m a software engineer based in Chicago. I currently work on the blockchain team at Amberdata, where we develop
+            I&apos;m a software engineer based in Chicago. I currently work on the derivatives team at Amberdata, where we develop
             technologies that deliver the world&apos;s leading comprehensive digital assets dataset.
           </p>
           <p  className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
               Previously, I was a core team engineer at Genesis Volatility, where
               I oversaw Web3 systems integration in our crypto options trading product from pre-seed
               to acquisition.
-              I&apos;ve spent the last five years working on software in frontend, 
-              backend and devops spanning a range of languages and tools.
+              I&apos;ve spent the last five years working on software both frontend
+              and backend, spanning a range of languages and tools.
           </p>
           <div className="mt-6 flex gap-6">
           <SocialLink
